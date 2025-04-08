@@ -2,9 +2,9 @@
 /*
 Estácio ADS 1-25
 Aluno: Luiz Gustavo Piffero
-Desafio Batalha Naval - Novato
+Desafio Batalha Naval - Aventureiro
 
-Imprimir o tabuleiro e imprimir os navios no tabuleiro, um na vertical e outro na horizontal.
+Imprimir o tabuleiro e imprimir os navios no tabuleiro, um na vertical, um na horizontal, outros dois em cada diagonal.
 
 */
 
@@ -63,18 +63,30 @@ scanf("%d", &inserir);
 
 printf("\n");
 
-//insere navio 1
+//insere navio 1 = horizontal
 for (int l = 6; l < 9; l++)
 {
     tabuleiro[2][l] = 3;
 }
 
-//insere navio 2
+//insere navio 2 = vertical
 for (int c = 2; c < 5; c++)
 {
     tabuleiro[c][4] = 3;
 }
 
+//insere navio 3 = diagonal principal
+for (int i = 6; i < 9; i++)
+{
+    tabuleiro[i][] = 3;
+}
+
+//insere navio 4 = diagonal contrária
+/*for (int i = 0; i < count; i++)
+{
+   
+}
+*/
 //mostra tabuleiro na tela com os dois navios pré definidos inseridos
 for (int l = 0; l < 11; l++)
 { 
